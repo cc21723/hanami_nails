@@ -174,16 +174,16 @@
                 $(".nav-link:not(.external)").on("click", function (e) {
                     e.preventDefault();
                     const target = $(this).attr("href");
-                    $("#main-content").load("pages/" + target + ".html");
+                    $("#main-content").load("./pages/" + target + ".html");
                 });
 
             });
 
             // 頁尾
-            $("#footer-placeholder").load("model/footer.html");
+            $("#footer-placeholder").load("./model/footer.html");
 
             // 預設載入首頁
-            $("#main-content").load("pages/home.html");
+            $("#main-content").load("./pages/home.html");
 
             //作品集 篩選功能
             function filterGallery(category) {
